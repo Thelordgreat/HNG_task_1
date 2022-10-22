@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  background: #f4f5f7;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .content {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.content .top {
+  display: flex;
+  justify-content: center;
+}
+
+.content .top > div:first-child {
+  text-align: center;
+}
+
+.content .top > div > div.name {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.content .top .icon {
+  position: absolute;
+  height: fit-content;
+  border: 1px dashed #d0d5dd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(16rem);
+  padding: 0.5rem;
+}
+
+.top .icon.dot {
+  padding: 1rem;
+  display: none;
+}
+
+.content .bottom ul li {
+  background: #eaecf0;
+  list-style: none;
+  text-align: center;
+  color: #101828;
+  font-weight: 600;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  border: 1px solid #eaecf0;
+}
+
+footer {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+footer div {
+  width: 76%;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  border-top: 2px solid #eaecf0;
+  padding: 1.5rem 0;
+  align-items: center;
+  color: #667085;
+}
+
+@media (max-width: 650px) {
+  .container .content {
+    width: 80%;
+  }
+
+  .content .top .icon {
+    transform: translateX(10rem);
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .container .content {
+    width: 90%;
+  }
+
+  .top .icon.arrow {
+    display: none;
+  }
+
+  .top .icon.dot {
+    display: block;
+  }
+
+  .content .bottom ul li {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .content .top .icon {
+    transform: translateX(7rem);
+    padding: .8rem;
+  }
+}
