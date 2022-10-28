@@ -16,7 +16,6 @@ body {
 
 .container {
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +24,7 @@ body {
 
 .container .content {
   width: 70%;
-  margin: 2rem auto;
+  margin: 3rem auto;
 }
 
 .content .top {
@@ -42,6 +41,12 @@ body {
   font-size: 1.2rem;
 }
 
+#profile__img img{
+  width: 6rem;
+  border-radius: 50%;
+  margin-bottom: .8rem;
+}
+
 .content .top .icon {
   position: absolute;
   height: fit-content;
@@ -55,8 +60,9 @@ body {
 }
 
 .top .icon.dot {
-  padding: 1rem;
+  padding: .5rem;
   display: none;
+  border-radius: 60%;
 }
 
 .content .bottom ul li {
@@ -70,6 +76,20 @@ body {
   font-size: 0.875rem;
   border-radius: 8px;
   border: 1px solid #eaecf0;
+  transition: .5s ease-in;
+}
+
+.bottom ul li:hover{
+  background-color: #d0d5dd;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
 }
 
 footer {
@@ -94,11 +114,16 @@ footer div {
   }
 
   .content .top .icon {
-    transform: translateX(10rem);
+    transform: translateX(9rem);
   }
 
-  footer {
-    display: none;
+  footer div{
+    flex-direction: column;
+    line-height: 2;
+  }
+
+  footer div img{
+    scale: .8;
   }
 }
 
