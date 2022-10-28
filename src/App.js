@@ -40,7 +40,7 @@ function App() {
             <a href="http://books.zuri.team" id='books' target="_blank" rel="noreferrer">
               <li data-tip='Books on design and coding'>Zuri Books</li>
             </a>
-            <a href="https://books.zuri.team/python-for-beginners?ref_id=Great-Okafor" id='book__python' target="_blank" rel="noreferrer">
+            <a href="https://books.zuri.team/python-for-beginners?ref_id=Great-O" id='book__python' target="_blank" rel="noreferrer">
               <li>Python Books</li>
             </a>
             <a href="https://background.zuri.team" id='pitch' target="_blank" rel="noreferrer">
@@ -65,11 +65,8 @@ function App() {
       <footer>
         <div>
           <img src={zuri} alt="" />
-
           <small>HNG Internship 9 Frontend Task</small>
-
           <img src={i4g} alt="" />
-
         </div>
       </footer>
     </div>
