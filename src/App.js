@@ -10,7 +10,7 @@ function App() {
       <Router>
         <section className="content">
           <Routes>
-            <Route index element={<Home />} />
+            <Route path='/' element={<Home />} />
             <Route path="contact" element={<Contact />} />
           </Routes>
         </section>

@@ -2,6 +2,7 @@ import React from 'react'
 import ReactTooltip from 'react-tooltip';
 import slack from "../images/slack.png"
 import github from '../images/github.png'
+import { Link } from 'react-router-dom';
 
 const Links = () => {
     return (
@@ -26,9 +27,10 @@ const Links = () => {
                     <a href="https://books.zuri.team/design-rules" id='book__design' target="_blank" rel="noreferrer">
                         <li>Design Books</li>
                     </a>
-                    <a href="/contact" id='contact'>
+                    <Link to="/contact">
                         <li>Contact Me</li>
-                    </a>
+                    </Link>
+
                     <ReactTooltip />
                 </ul>
             </div>
