@@ -7,7 +7,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (messageField.length == 0) {
+        if (messageField.length === 0) {
             setError(true)
         }
     }
