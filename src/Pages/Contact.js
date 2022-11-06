@@ -21,24 +21,24 @@ const Contact = () => {
 
                 <div className='name_row'>
                     <div>
-                        <label>First Name:</label>
+                        <label htmlFor='first_name'>First Name:</label>
                         <input type="name" placeholder='Enter your first name' id='first_name' required />
                     </div>
                     <div>
-                        <label>Last Name:</label>
+                        <label htmlFor='last_name'>Last Name:</label>
                         <input type="name" placeholder='Enter your last name' id='last_name' required />
                     </div>
                 </div>
 
                 <div className='row'>
-                    <label>Email:</label>
+                    <label htmlFor='email'>Email:</label>
                     <input type="email" placeholder='yourname@email.com' id='email' required />
                 </div>
 
                 <div className='row'>
-                    <label>Message:</label>
-                    <input type="text" className='message_field' placeholder="" id='message' onChange={e => setMessageField(e.target.value)} />
-                    {error&&messageField.length<=0? <span>Please enter a message</span> : ""}
+                    <label htmlFor='message'>Message:</label>
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Send me a message and I'll reply you as soon as possible..." className='message_field' onChange={e => setMessageField(e.target.value)}></textarea>
+                    {error && messageField.length <= 0 ? <span>Please enter a message</span> : ""}
                 </div>
 
                 <div className='terms'>
@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                    <button id='btn_submit'>Send message</button>
+                    <button id='btn__submit'>Send message</button>
                 </div>
             </form>
         </div>
