@@ -10,6 +10,7 @@ const Contact = () => {
         if (messageField.length === 0) {
             setError(true)
         }
+        e.target.reset();
     }
 
     return (
